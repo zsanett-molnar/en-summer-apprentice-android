@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<gradient
+        android:startColor="@color/roz_deschis"
+        android:endColor="@color/roz_inchis"/>-->
+    <!--<gradient
+        android:startColor="@color/homepage_pressed"
+        android:endColor="@color/white"/>-->
+    <solid android:color="@color/homepage_pressed"></solid>
+    <corners
+        android:radius="13dp"/>
+</shape>

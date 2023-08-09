@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/event_crowd" />
+
+    <TextView
+        android:layout_width="303dp"
+        android:layout_height="152dp"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Discover new events"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/events_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="View Events"
+            android:textSize="20dp"
+            android:fontFamily="@font/archivo_black"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            style="@style/Button"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/orders_button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="View Orders"
+            android:textSize="20dp"
+            android:fontFamily="@font/archivo_black"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            style="@style/Button"
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
